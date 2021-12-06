@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body {
+	display: grid;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+	background-color: aliceblue;
+	padding: 50px 0;
+}
+.contact-wrap {
+	width: 80%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.contact-in {
+	padding: 20px;
+}
+.contact-in:nth-child(1),.contact-in:nth-child(2) {
+	flex: 30%;
+	background: url(img/help_1.jpg);
+	color: #fff;
+	margin: 10px;
+	box-shadow: 0 3px 4px 2px grey;
+}
+.contact-in:nth-child(2) {
+	background: #4091FF;
+}
+
+.contact-in h1 {
+	font-size: 24px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.contact-in h2 {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+.contact-in h2 i,.contact-in ul li a i {
+	font-size: 18px;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	background: #f5f5f5;
+	color: #000;
+	border-radius: 50px;
+	line-height: 40px;
+	text-align: center;
+}
+.contact-in h2 i:hover,.contact-in ul li a i:hover {
+	background: #42FE1E;;
+}
+.contact-in p {
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+.contact-in ul {
+	padding: 0;
+	margin: 0;
+}
+.contact-in ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+.contact-in ul li a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	background: #fff;
+	border-radius: 50px;
+}
+
+.contact-in form {
+	width: 100%;
+	height: auto;
+}
+.contact-in-input,.contact-in-textarea,.contact-in-btn {
+	width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 20px;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+}
+.contact-in-textarea {
+	height: 140px;
+	padding-top: 10px;
+}
+.contact-in-textarea::placeholder, .contact-in-input::placeholder,.contact-in-btn{
+	color: #fff;
+}
+.contact-in-input:hover,.contact-in-textarea:hover{
+	font-weight: bold;
+	background-color:mediumslateblue;
+	border: none;
+}
+.contact-in-btn {
+	cursor: pointer;
+}
+.contact-in-btn:hover{
+	background-color: white;
+	color: #4091FF;
+	font-weight: bold;
+	box-shadow: 0 1px 4px 2px grey;
+}
+
+.map {
+	width: 80%;
+	padding: auto;
+	height: 350px;
+	box-shadow: 0 3px 4px 2px grey;
+	margin: auto;
+	
+}
+.map iframe {
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen and (max-width:480px) {
+	.contact-in:nth-child(1) {
+		flex: 50%;
+	}
+	.contact-in:nth-child(2) {
+		flex: 50%;
+	}
+	.contact-in:nth-child(3) {
+		flex: 100%;
+	}
+}
+
+@media only screen and (max-width:360px) {
+	.contact-in:nth-child(1) {
+		flex: 50%;
+	}
+	.contact-in:nth-child(2) {
+		flex: 50%;
+	}
+	.contact-in:nth-child(3) {
+		flex: 100%;
+	}
+}

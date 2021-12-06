@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+body{
+    background: aliceblue;
+    padding-bottom: 30px;
+}
+.appoin_heading{
+    font-weight: bold;
+    color:#42FE1E;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0px;
+    position: relative;
+}
+.appoin_heading::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 3px;
+    background-color:#4091FF;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+.main_section{
+    display: flex;
+    align-items: center;
+    padding: 0px 215px;
+}
+.appoint{
+    padding: 0px 70px;
+}
+.appoint .heading{
+    font-weight: bold;
+    color:#4091FF;
+    font-size: 30px;
+}
+.appoint .content,.ptype_choose strong{
+    color: darkkhaki; 
+    line-height: 30px;
+    padding-top: 20px;
+    text-align: justify;  
+}
+.ptype_choose{
+    display: flex;
+    padding: 20px 0;
+}
+.ptype_choose button{
+    border-style: none;
+    color: white;
+    padding: 20px 25px;
+    font-size: 15px;
+    margin-left: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.ptype_choose .old_btn{
+    background-color: 	#4091FF;
+}
+.ptype_choose .new_btn{
+    background-color:	#42FE1E;
+}
+.ptype_choose .old_btn:hover{
+    background-color:white;
+    border: 2px solid 	#4091FF;
+    color: 	#4091FF;
+    font-weight: bold;
+}
+.ptype_choose .new_btn:hover{
+    background-color:white;
+    border: 2px solid 	#42FE1E;
+    color: 	#42FE1E;
+    font-weight: bold;
+}
+strong,.ptype_choose strong{
+    color:darkgray
+}
+  @keyframes animate{
+    0%{
+        width: 300px;
+
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 300px;
+    }
+  }

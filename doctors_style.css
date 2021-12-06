@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .2s linear;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+}
+.doctors{
+  height: auto;
+  background-color: aliceblue;
+}
+.doctors_heading{
+  font-weight: bold;
+  color:#42FE1E;
+  font-size: 40px;
+  text-align: center;
+  padding: 30px 0px;
+  position: relative;
+}
+.doctors_heading::before{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  background-color:#4091FF;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 4s linear infinite;
+}
+.doctors .row{
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 0fr));
+  gap: 1.5rem;
+  word-break: break-word;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+}
+.doctor_box {
+  align-items: center;
+  justify-content: center;
+}
+.our-team-main {
+  width: 100%;
+  height: 250px;
+  border-bottom: 5px #323233 solid;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 6px 1px grey
+}
+.our-team-main img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  width: 150px;
+}
+.our-team-main h3 {
+  font-size: 20px;
+  color: white;
+}
+.our-team-main p {
+  padding-top: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+.team-back {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 20px 0 20px;
+  background: white;
+  text-align: left;
+}
+.team-back .button{
+  padding-top: 20px;
+}
+.team-back button{
+  border-style: none;
+  color: white;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 5px;
+}
+.team-back .detail_button{
+  background-color: 	#4091FF;
+}
+.team-back .appo_button{
+  background-color:	#42FE1E;
+}
+.team-back .detail_button:hover{
+  background-color:white;
+  border: 2px solid 	#4091FF;
+  color: 	#4091FF;
+}
+.team-back .appo_button:hover{
+  background-color:white;
+  border: 2px solid 	#42FE1E;
+  color: 	#42FE1E;
+}
+.team-front {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  z-index: 10;
+  background: #4091FF;
+  padding: 15px;
+  bottom: 0px;
+  transition: all 0.5s ease;
+}
+.our-team-main:hover .team-front {
+  bottom: -300px;
+  transition: all 0.5s ease;
+}
+.our-team-main:hover {
+  border-color: #777;
+  transition: 0.5s;
+}
+@keyframes animate{
+    0%{
+        width: 300px;
+
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 300px;
+    }
+  }

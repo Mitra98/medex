@@ -1,0 +1,76 @@
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text{
+    padding:40px;
+    background:#eee;
+}
+.text h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding:10px;
+}
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+.banner-container .banner{
+    background:linear-gradient(-55deg, blue 29%, #4091FF 29.1%, #4091FF 68%, blue 68.1%);
+    border-radius: 5px;
+    margin:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px #0005;
+    overflow: hidden;
+    height: 400px;
+}
+.content{
+    width: 1500px;
+    height: 350px;
+}
+.banner-container .banner .content{
+    flex:1 1 250px;
+    text-align: center;
+    padding:27px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    display: flex;
+}
+.banner-container .banner .content div:first-child{
+    width: 25%;
+    margin-top: -60px;
+}
+.banner-container .banner .content div:nth-child(2){
+    width: 50%;
+    margin-top: 50px;
+}
+.banner-container .banner .content div:nth-child(3){
+    width: 25%;
+    margin-top: 135px;
+}
+.banner-container .banner .content img{
+    width: 100%
+}
+.banner-container .banner .content div span{
+    color:#eee;
+    font-size: 40px;
+    margin-top: 10px;
+}
+.banner-container .banner .content div h3{
+    color:#fff;
+    font-size: 100px;
+    
+}
+.banner-container .banner .content div p{
+    color:#eee;
+    font-size: 30px;
+    padding:10px 0;
+}
